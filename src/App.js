@@ -4,6 +4,10 @@ import './App.css';
 import HomePage from './pages/homepage/homepage-component';
 import ShopPage from './pages/shop/shop-component';
 import Header from './components/header/header-component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-page'; 
+//import SignIn from './components/sign-in-component/sign-in-component'
+
+
 const HatsPage =()=>(
   <div>
     <h1>HATS PAGE is open</h1>
@@ -19,6 +23,8 @@ function App() {
         <Route exact path='/' component={HomePage}/>
         <Route path='/hats' component={HatsPage}/>
         <Route path='/shop' component={ShopPage}/>
+        <Route path='/sigin' component={SignInAndSignUpPage}/>
+        {/*<Route path='/s' component={SignIn} />*/}
       </Switch>
     </div>
   );
