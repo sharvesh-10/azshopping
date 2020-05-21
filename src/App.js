@@ -5,6 +5,7 @@ import HomePage from './pages/homepage/homepage-component';
 import ShopPage from './pages/shop/shop-component';
 import Header from './components/header/header-component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-page'; 
+import {auth} from '../src/firebase/firebase-utils'
 //import SignIn from './components/sign-in-component/sign-in-component'
 
 
@@ -14,8 +15,29 @@ const HatsPage =()=>(
   </div>
 );
 
+class App extends React.Component{
+  constructor(){
+    super();
 
-function App() {
+    this.state = {
+      currentUser: null
+    }
+  }
+
+  unsubscribeFromAuth = null;
+  componentDidMount(){
+    this.unsubscribeFromAuth=auth.onAuthStateChanged(user => {
+      this.setState({ currentUser: user })
+      console.log(user);
+    });
+    
+  }
+  componentWillUnmount(){
+    this.unsubscribeFromAuth();
+  }
+
+
+  render(){
   return (
     <div>
       <Header />
@@ -28,6 +50,7 @@ function App() {
       </Switch>
     </div>
   );
+  }
 }
 
 export default App;
