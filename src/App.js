@@ -40,12 +40,12 @@ class App extends React.Component{
   render(){
   return (
     <div>
-      <Header />
+      <Header currentUser={this.state.currentUser} />
       <Switch>
         <Route exact path='/' component={HomePage}/>
         <Route path='/hats' component={HatsPage}/>
         <Route path='/shop' component={ShopPage}/>
-        <Route path='/sigin' component={SignInAndSignUpPage}/>
+        <Route path='/sigNin' component={SignInAndSignUpPage}/>
         {/*<Route path='/s' component={SignIn} />*/}
       </Switch>
     </div>
