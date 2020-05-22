@@ -7,16 +7,18 @@
   
     .logo-container {
       height: 100%;
-      width: 70px;
+      width: 100px;
       padding: 25px;
     }
   
     .options {
-      width: 50%;
+      width: 70%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      font-weight: 300;
+      font-size: large;
   
       .option {
         padding: 10px 15px;
