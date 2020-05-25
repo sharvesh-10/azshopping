@@ -3,6 +3,7 @@ import FormInput from "../form-input/form-input-component";
 import CustomButton from '../custom-button/custom-button-component';
 import { auth,signInWithGoogle} from "../../firebase/firebase-utils";
 import './sign-in-styles.scss';
+import {Redirect} from 'react-router-dom';
 
 class SignIn extends React.Component{
     constructor(props){
@@ -18,7 +19,8 @@ class SignIn extends React.Component{
         const {email ,password} = this.state;
         try{
             await auth.signInWithEmailAndPassword(email, password);
-            this.setState({ email: '',password: ''})
+            this.setState({ email: '',password: ''});
+            return <Redirect to="/"/>
         }catch(error){
             console.log(error.message);
         }
@@ -34,10 +36,10 @@ class SignIn extends React.Component{
         
         return(
             <div className='sign-in'>
-                <h1>I ALREADY HAVE AN ACCOUNT</h1>
-                <span><h2>Sign in with E-Mail</h2></span>
+                <h2>I ALREADY HAVE AN ACCOUNT</h2>
+                <span>Sign in with E-Mail</span>
                 <form onSubmit={this.handleSubmit}>
-                <label><h3>E-MAIL</h3></label>
+                <label>E-MAIL</label>
                     <FormInput 
                         name="email" 
                         type="email" 
@@ -46,7 +48,7 @@ class SignIn extends React.Component{
                         label="email"
                         required 
                     />
-                      <label><h3>PASSWORD</h3></label>
+                      <label>PASSWORD</label>
                     <FormInput 
                         name="password"
                         type="password" 
