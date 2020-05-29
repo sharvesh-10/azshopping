@@ -3,7 +3,7 @@ import FormInput from "../form-input/form-input-component";
 import CustomButton from '../custom-button/custom-button-component';
 import { auth,signInWithGoogle} from "../../firebase/firebase-utils";
 import './sign-in-styles.scss';
-import {Redirect} from 'react-router-dom';
+/*import {Redirect} from 'react-router-dom';*/
 
 class SignIn extends React.Component{
     constructor(props){
@@ -20,7 +20,6 @@ class SignIn extends React.Component{
         try{
             await auth.signInWithEmailAndPassword(email, password);
             this.setState({ email: '',password: ''});
-            return <Redirect to="/"/>
         }catch(error){
             console.log(error.message);
         }
