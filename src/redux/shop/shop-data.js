@@ -130,7 +130,7 @@ const SHOP_DATA = {
         id: 19,
         name: 'Blue Jean Jacket',
         imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-        price: 90
+        price: 900
       },
       {
         id: 20,
