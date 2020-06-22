@@ -34,6 +34,10 @@ const CheckoutPage =({cartItems,total}) =>(
         <div className='total'>
             <span>TOTAL:₹{total}</span>
         </div>
+        <div className='sample-details'>
+            <h3>Sample Payment Card Details</h3>
+            <h3>4242 4242 4242 4242 EXP:12/27 CVV:123</h3>
+        </div>
         <StripeCheckoutButton price={total}/>
     </div>
 );
