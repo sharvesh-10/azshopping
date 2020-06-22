@@ -9,7 +9,7 @@ const Footer = ({currentUser}) => (
         <div className='options1'>
         {
             currentUser?(
-            <h3 className='option'>Logged in as {currentUser.displayName}</h3>
+            <h3 className='option'>Logged in as {currentUser.email}</h3>
             ) : (
                 <h3 className='option'>please sign in</h3>
             )

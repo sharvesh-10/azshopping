@@ -1,5 +1,5 @@
 .collection-item {
-    width: 22vw;
+    width: 21vw;
     display: flex;
     flex-direction: column;
     height: 350px;
@@ -9,9 +9,10 @@
     .image {
       width: 100%;
       height: 95%;
-      background-size: cover;
+      background-size: contain;
       background-position: center;
       margin-bottom: 5px;
+      background-repeat: no-repeat;
     }
     .custom-button{
       width: 80%;
@@ -52,7 +53,8 @@
       width: 100%;
       height: 5%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      //align-items: center;
       font-size: 18px;
   
       .name {

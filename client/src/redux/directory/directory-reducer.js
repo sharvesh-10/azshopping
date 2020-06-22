@@ -34,7 +34,7 @@ const INITIAL_STATE = {
             title: 'phones',
             imageUrl: 'https://s3-ap-southeast-1.amazonaws.com/bsy/iportal/images/handset-offer-banner-new_31F555919982EFE18360075F1D2EC443.png',
             id: 5,
-            linkUrl: 'shop/phones'
+            linkUrl: 'shop/mobiles'
         },
         {
             title: 'sports',
@@ -46,7 +46,7 @@ const INITIAL_STATE = {
             title: 'food-items',
             imageUrl: 'https://scx2.b-cdn.net/gfx/news/hires/2016/howcuttingdo.jpg',
             id: 5,
-            linkUrl: 'shop/food'
+            linkUrl: 'shop/foods'
         }
 
     ]
