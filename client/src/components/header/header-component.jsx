@@ -24,7 +24,7 @@ const Header = ({currentUser, hidden}) => (
                 currentUser ? <div className='option' onClick={() => auth.signOut()}>SIGN OUT</div> : <Link className='option' to='/signin'>SIGN IN</Link>
             }
             {
-                currentUser ? ( currentUser.email === "sharvesh.shark@gmail.com" ?(<Link className='option' to='/additems'>ADD-ITEMS</Link>): null) : null
+                currentUser ? ( currentUser.email === "sharvesh.shark@gmail.com" ?(<div className='option'>ADMIN</div>): null) : null
             }
             <CartIcon/>
         </div>

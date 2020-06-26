@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+
 const config = {
     apiKey: "AIzaSyDyJ-9GFF3Rcp7svSan1XP-3wwlJnmiHrI",
     authDomain: "azshopping-db.firebaseapp.com",
@@ -14,6 +15,9 @@ const config = {
 };
 firebase.initializeApp(config);
 
+export const auth = firebase.auth();
+
+export const firestore = firebase.firestore();
 
 export const createUserProfileDocument = async (userAuth, additionalData) =>{
     if(!userAuth) return;
@@ -35,7 +39,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) =>{
     }
     return userRef; 
 }
-export const addCollectionAndDocuments = async (collectionKey,objectsToAdd) => {
+export const addDocumentsToCollections = async (collectionKey,objectsToAdd) => {
     const collectionRef = firestore.collection(collectionKey);
     const batch = firestore.batch();
     objectsToAdd.forEach(obj => {
@@ -63,9 +67,6 @@ export const convertCollectionsSnapshotToMap = (collections) =>{
     },{});
 };
 
-export const auth = firebase.auth();
-
-export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt:'select_account' });

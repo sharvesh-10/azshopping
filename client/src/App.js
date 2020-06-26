@@ -10,7 +10,7 @@ import ShopPage from './pages/shop/shop-component';
 import Header from './components/header/header-component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-page';
 import CheckoutPage from './pages/checkout/checkout-page-component'; 
-import AddItems from './components/add-items/add-items-component';
+//import AddItems from './components/add-items/add-items-component';
 import {GlobalStyle} from './global-styles';
 import Footer from './components/footer/contact-componen';
 class App extends React.Component{
@@ -54,7 +54,7 @@ class App extends React.Component{
           render = {() => this.props.currentUser ? (<Redirect to='/'/>) 
             : (<SignInAndSignUpPage/>) } 
         />
-        <Route path='/additems' component={AddItems}/>
+        {/*<Route path='/additems' component={AddItems}/>*/}
       </Switch>
       <Footer/>
     </div>
