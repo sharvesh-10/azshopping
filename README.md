@@ -13,4 +13,4 @@ A shopping React website using Redux,Firebase,Stripe payments.
 - [x] Include easy payments via Stripe payments API
 
 ## SNAPSHOTS
-![Image of Yaktocat](https://drive.google.com/drive/folders/1JM-CCU8tOcd_iVUHMlsgLFm8OPjK87u_)
+<iframe src="https://drive.google.com/file/d/1PLvCqa1O8aRW7G_WoK38Tud17gDCTeuk/preview" width="640" height="480"></iframe>
