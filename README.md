@@ -13,3 +13,4 @@ A shopping React website using Redux,Firebase,Stripe payments.
 - [x] Include easy payments via Stripe payments API
 
 ## SNAPSHOTS
+<img src="https://drive.google.com/file/d/1PLvCqa1O8aRW7G_WoK38Tud17gDCTeuk/view?usp=sharing" alt="img" width="600" height="400" />
