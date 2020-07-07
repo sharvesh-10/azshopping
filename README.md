@@ -13,6 +13,6 @@ A shopping React website using Redux,Firebase,Stripe payments.
 - [x] Include easy payments via Stripe payments API
 
 ## SNAPSHOTS
-<img src="https://github.com/sharvesh-10/azshopping/blob/master/client/public/az-shopping1.png" width="640" height="480" />
-<img src="https://github.com/sharvesh-10/azshopping/blob/master/client/public/az-shopping2.png" width="640" height="480" />
-<img src="https://github.com/sharvesh-10/azshopping/blob/master/client/public/az-shopping3.png" width="640" height="480" />
+<img src="https://github.com/sharvesh-10/azshopping/blob/master/client/public/az-shopping1.png" width="800" height="500" />
+<img src="https://github.com/sharvesh-10/azshopping/blob/master/client/public/az-shopping2.png" width="800" height="500" />
+<img src="https://github.com/sharvesh-10/azshopping/blob/master/client/public/az-shopping3.png" width="800" height="500" />
