@@ -10,7 +10,7 @@ import ParticlesBg from 'particles-bg';
 const CheckoutPage =({cartItems,total}) =>(
     
     <div className='checkout-page'>
-        <ParticlesBg type="cobweb" color="#2e20e8"  num={300} bg={true} />
+        <ParticlesBg type="cobweb" color="#2e20e8"  num={150} bg={true} />
         <div className='checkout-header'>
             <div className='header-block'>
                 <span>Product</span>
