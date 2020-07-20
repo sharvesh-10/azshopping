@@ -6,7 +6,7 @@ import './sign-in-page-styles.scss';
 
 const SignInAndSignUpPage = () => (
   <div className='sign-in-and-sign-up'>
-    <ParticlesBg type="cobweb" color="#2e20e8"  num={300} bg={true} />
+    <ParticlesBg type="cobweb" color="#2e20e8"  num={100} bg={true} />
     <SignIn />
     <SignUp />
   </div>

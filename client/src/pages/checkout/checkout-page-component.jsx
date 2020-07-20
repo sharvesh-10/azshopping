@@ -5,7 +5,7 @@ import {connect} from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { selectCartItems,selectCartTotal } from '../../redux/cart/cart-selectors';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button-component';
-import PartclesBg from 'particles-bg';
+import ParticlesBg from 'particles-bg';
 
 const CheckoutPage =({cartItems,total}) =>(
     
