@@ -5,9 +5,10 @@ import {connect} from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { selectCartItems,selectCartTotal } from '../../redux/cart/cart-selectors';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button-component';
-
+import PartclesBg from 'particles-bg';
 
 const CheckoutPage =({cartItems,total}) =>(
+    <ParticlesBg type="cobweb" color="#2e20e8"  num={300} bg={true} />
     <div className='checkout-page'>
         <div className='checkout-header'>
             <div className='header-block'>

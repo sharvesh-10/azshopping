@@ -21,6 +21,7 @@
     "express": "^4.16.4",
     "express-sslify": "^1.2.0",
     "firebase-admin": "^8.12.1",
+    "particles-bg": "^2.5.0",
     "stripe": "6.28.0"
   },
   "devDependencies": {
