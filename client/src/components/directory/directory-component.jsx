@@ -6,8 +6,9 @@ import { selectDirectorySections } from '../../redux/directory/directory-selecto
 import './directory.scss';
 import ParticlesBg from 'particles-bg';
 const Directory = ({sections}) => (
-    <ParticlesBg type="cobweb" color="#2e20e8"  num={300} bg={true} />
+   
     <div className='directory-menu'>
+         <ParticlesBg type="cobweb" color="#2e20e8"  num={300} bg={true} />
         {sections.map(({id, ...otherSectionProps}) => (
             <MenuItem key={id} {...otherSectionProps}/>
         ))}

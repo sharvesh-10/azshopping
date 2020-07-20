@@ -8,8 +8,9 @@ import StripeCheckoutButton from '../../components/stripe-button/stripe-button-c
 import PartclesBg from 'particles-bg';
 
 const CheckoutPage =({cartItems,total}) =>(
-    <ParticlesBg type="cobweb" color="#2e20e8"  num={300} bg={true} />
+    
     <div className='checkout-page'>
+        <ParticlesBg type="cobweb" color="#2e20e8"  num={300} bg={true} />
         <div className='checkout-header'>
             <div className='header-block'>
                 <span>Product</span>
