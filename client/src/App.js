@@ -45,13 +45,13 @@ class App extends React.Component{
       <GlobalStyle />
       <Header/>
       <Switch>
-        <Route path='/' component={HomePage} />
+        <Route path='/home' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
         <Route path='/checkout' component={CheckoutPage} />
         <Route 
           exact 
-          path='/signin' 
-          render = {() => this.props.currentUser ? (<Redirect to='/'/>) 
+          path='/' 
+          render = {() => this.props.currentUser ? (<Redirect to='/home'/>) 
             : (<SignInAndSignUpPage/>) } 
         />
         {/*<Route path='/additems' component={AddItems}/>*/}
