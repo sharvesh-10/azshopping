@@ -45,9 +45,9 @@ class App extends React.Component{
       <GlobalStyle />
       <Header/>
       <Switch>
-        <Route exact path='/' component={HomePage} />
+        <Route path='/' component={HomePage} />
         <Route path='/shop' component={ShopPage} />
-        <Route exact path='/checkout' component={CheckoutPage} />
+        <Route path='/checkout' component={CheckoutPage} />
         <Route 
           exact 
           path='/signin' 
